@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'stub_path' => env('UI_STUB_PATH', base_path('vendor/bastinald/ui/resources/stubs')),
+    'stub_path' => env('UI_STUB_PATH', base_path('vendor/borisov/ui/resources/stubs')),
 
     /*
     |--------------------------------------------------------------------------

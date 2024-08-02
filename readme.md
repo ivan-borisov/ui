@@ -1,4 +1,4 @@
-## bastinald/ui
+## borisov/ui
 
 Laravel Livewire & Bootstrap 5 UI & CRUD starter kit. This package is a modernized version of the old `laravel/ui` package for developers who prefer using Bootstrap 5 and full page Livewire components to build their projects. It also comes with a few features to boost your development speed even more.
 
@@ -58,7 +58,7 @@ MAIL_*
 Require this package via composer:
 
 ```console
-composer require bastinald/ui
+composer require borisov/ui
 ```
 
 Run the `ui:install` command:
@@ -203,7 +203,7 @@ The `HasHashes` traits allows you to specify model attributes you want to hash a
 To use automatic hashing, use the `HashHashes` trait and specify a `hashes` property with the attributes that should be automatically hashed:
 
 ```php
-use Bastinald\Ui\Traits\HasHashes;
+use Borisov\Ui\Traits\HasHashes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable

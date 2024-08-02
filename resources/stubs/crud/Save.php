@@ -3,7 +3,7 @@
 namespace DummyComponentNamespace;
 
 use DummyModelNamespace\DummyModelClass;
-use Bastinald\Ui\Traits\WithModel;
+use Borisov\Ui\Traits\WithModel;
 use Livewire\Component;
 
 class Save extends Component
