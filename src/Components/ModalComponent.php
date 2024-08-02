@@ -1,6 +1,6 @@
 <?php
 
-namespace Bastinald\Ui\Components;
+namespace Borisov\Ui\Components;
 
 use Livewire\Component;
 

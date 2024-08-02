@@ -1,6 +1,6 @@
 <?php
 
-namespace Bastinald\Ui\Commands;
+namespace Borisov\Ui\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;

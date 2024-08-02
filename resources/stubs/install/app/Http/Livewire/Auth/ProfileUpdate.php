@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire\Auth;
 
-use Bastinald\Ui\Traits\WithModel;
+use Borisov\Ui\Traits\WithModel;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rule;
 use Livewire\Component;

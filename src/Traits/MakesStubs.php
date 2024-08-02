@@ -1,6 +1,6 @@
 <?php
 
-namespace Bastinald\Ui\Traits;
+namespace Borisov\Ui\Traits;
 
 use Illuminate\Filesystem\Filesystem;
 

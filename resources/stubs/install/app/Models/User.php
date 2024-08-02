@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Bastinald\Ui\Traits\HasHashes;
+use Borisov\Ui\Traits\HasHashes;
 use Faker\Generator;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Schema\Blueprint;

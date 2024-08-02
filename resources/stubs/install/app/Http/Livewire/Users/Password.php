@@ -3,7 +3,7 @@
 namespace App\Http\Livewire\Users;
 
 use App\Models\User;
-use Bastinald\Ui\Traits\WithModel;
+use Borisov\Ui\Traits\WithModel;
 use Livewire\Component;
 
 class Password extends Component

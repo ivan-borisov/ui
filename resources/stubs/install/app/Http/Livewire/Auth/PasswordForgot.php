@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire\Auth;
 
-use Bastinald\Ui\Traits\WithModel;
+use Borisov\Ui\Traits\WithModel;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Route;
 use Livewire\Component;

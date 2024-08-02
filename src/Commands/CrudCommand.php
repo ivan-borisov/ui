@@ -1,8 +1,8 @@
 <?php
 
-namespace Bastinald\Ui\Commands;
+namespace Borisov\Ui\Commands;
 
-use Bastinald\Ui\Traits\MakesStubs;
+use Borisov\Ui\Traits\MakesStubs;
 use Illuminate\Console\Command;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Artisan;
@@ -92,8 +92,10 @@ class CrudCommand extends Command
     {
         $modelClass = $this->modelParser->className();
 
-        if (!file_exists($this->modelParser->classPath()) &&
-            $this->confirm('Model <comment>' . $modelClass . '</comment> does not exist, make it now?')) {
+        if (
+            !file_exists($this->modelParser->classPath()) &&
+            $this->confirm('Model <comment>' . $modelClass . '</comment> does not exist, make it now?')
+        ) {
             Artisan::call('ui:model ' . $modelClass, [], $this->getOutput());
 
             $this->warn("Don't forget to migrate after updating the model or CRUD will throw errors.");

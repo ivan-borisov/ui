@@ -1,6 +1,6 @@
 <?php
 
-namespace Bastinald\Ui\Commands;
+namespace Borisov\Ui\Commands;
 
 use Illuminate\Console\Command;
 use Doctrine\DBAL\Schema\Comparator;
@@ -52,10 +52,10 @@ class MigrateCommand extends Command
 
         foreach ((new Finder)->in($path) as $model) {
             $model = $namespace . str_replace(
-                    ['/', '.php'],
-                    ['\\', ''],
-                    Str::after($model->getRealPath(), realpath(app_path()) . DIRECTORY_SEPARATOR)
-                );
+                ['/', '.php'],
+                ['\\', ''],
+                Str::after($model->getRealPath(), realpath(app_path()) . DIRECTORY_SEPARATOR)
+            );
 
             if (method_exists($model, 'migration')) {
                 $this->migrate($model);

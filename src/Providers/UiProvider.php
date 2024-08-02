@@ -1,13 +1,13 @@
 <?php
 
-namespace Bastinald\Ui\Providers;
+namespace Borisov\Ui\Providers;
 
-use Bastinald\Ui\Commands\ComponentCommand;
-use Bastinald\Ui\Commands\CrudCommand;
-use Bastinald\Ui\Commands\InstallCommand;
-use Bastinald\Ui\Commands\MigrateCommand;
-use Bastinald\Ui\Commands\ModelCommand;
-use Bastinald\Ui\Components\ModalComponent;
+use Borisov\Ui\Commands\ComponentCommand;
+use Borisov\Ui\Commands\CrudCommand;
+use Borisov\Ui\Commands\InstallCommand;
+use Borisov\Ui\Commands\MigrateCommand;
+use Borisov\Ui\Commands\ModelCommand;
+use Borisov\Ui\Components\ModalComponent;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
 

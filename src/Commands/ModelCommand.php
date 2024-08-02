@@ -1,8 +1,8 @@
 <?php
 
-namespace Bastinald\Ui\Commands;
+namespace Borisov\Ui\Commands;
 
-use Bastinald\Ui\Traits\MakesStubs;
+use Borisov\Ui\Traits\MakesStubs;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
 use Livewire\Commands\ComponentParser;

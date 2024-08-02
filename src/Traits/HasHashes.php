@@ -1,6 +1,6 @@
 <?php
 
-namespace Bastinald\Ui\Traits;
+namespace Borisov\Ui\Traits;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Hash;
@@ -16,9 +16,11 @@ trait HasHashes
             }
 
             foreach (Arr::wrap($model->hashes) as $hash) {
-                if ($model->$hash &&
+                if (
+                    $model->$hash &&
                     Str::length($model->$hash) < 60 &&
-                    !Str::startsWith($model->$hash, '$2y$')) {
+                    !Str::startsWith($model->$hash, '$2y$')
+                ) {
                     $model->$hash = Hash::make($model->$hash);
                 }
             }
